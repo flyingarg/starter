@@ -1,11 +1,8 @@
+-- lua/plugins/rose-pine.lua
 return {
-  "anAcc22/sakura.nvim",
-  lazy = false,
-  priority = 1000, -- Load the colorscheme before other start plugins
-  dependencies = { "rktjmp/lush.nvim" },
+  "rose-pine/neovim",
+  name = "rose-pine",
   config = function()
-    -- Set the colorscheme (use "sakura" or "sakuradark" / "sakuralight" if preferred)
-    vim.opt.background = "light"
-    vim.cmd.colorscheme("sakura")
+    vim.cmd("colorscheme rose-pine-dawn")
   end,
 }
